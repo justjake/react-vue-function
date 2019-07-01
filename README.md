@@ -1,4 +1,4 @@
-# react-vue-hooks
+# react-vue-function
 
 I like how Vue's upcoming functional API de-tooths some of the nasty edges of React's hooks system.
 I also have ended up liking magical, reactive systems like Mobx.
