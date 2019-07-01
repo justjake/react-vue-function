@@ -1,3 +1,46 @@
+# react-vue-hooks
+
+I like how Vue's upcoming functional API de-tooths some of the nasty edges of React's hooks system.
+I also have ended up liking magical, reactive systems like Mobx.
+This is my attempt to merge both concepts into a new React component API.
+
+- Implementation: [./src/framework.tsx]().
+- Example: [./src/App.tsx]().
+
+Some credit to @HerringtonDarkholme's
+[comment on the Vue RFC](https://github.com/vuejs/rfcs/pull/42#issuecomment-500185919) for solving
+a type-inference issue I had.
+
+## TODOs
+
+- [ ] proposed vue api
+  - [x] observable props
+  - [x] bindings w/ `Value<T> = { value: T}`
+  - [x] `value(V) =>` (aka state)
+  - [x] `computed(...)`
+  - [x] unwrap bindings for render function
+  - [ ] watch
+  - [ ] inject / provide
+  - [ ] vue-style prop types
+  - [ ] lifecycle
+    - [ ] onMounted
+    - [ ] onUnmounted
+    - [ ] onUpdated
+    - [ ] onCleanup
+- [ ] make React hooks reactive
+  - [ ] useState: convert `set, get` to an observable value
+  - [ ] useEffect
+  - [ ] useContext
+  - [ ] useReducer
+  - [ ] useCallback
+  - [ ] useMemo
+  - [ ] useRef
+  - [ ] useImperativeHandle
+  - [ ] useLayoutEffect
+  - [ ] useDebugValue
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
